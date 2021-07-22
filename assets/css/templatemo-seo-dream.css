@@ -2119,3 +2119,11 @@ responsive
     font-weight: 800;
     font-size: 2rem;
 }
+a {
+    color: #b2372d;
+    text-decoration: underline;
+  }
+a:hover {
+    color: #ff1500;
+  }
+  
