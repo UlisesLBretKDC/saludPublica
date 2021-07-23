@@ -2119,11 +2119,58 @@ responsive
     font-weight: 800;
     font-size: 2rem;
 }
+
 a {
     color: #b2372d;
     text-decoration: underline;
-  }
+}
+
 a:hover {
     color: #ff1500;
-  }
-  
+}
+
+.list-unstyled,
+.chart-legend,
+.contacts-list,
+.users-list,
+.mailbox-attachments {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mailbox-attachments li {
+    float: left;
+    width: 200px;
+    border: 1px solid #d4d4d4;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.mailbox-attachment-icon {
+    text-align: center;
+    font-size: 65px;
+    color: #666;
+    padding: 20px 10px;
+    background-color: #fff;
+}
+
+.mailbox-attachment-info {
+    padding: 10px;
+    background: #E9ECEF;
+}
+
+.mailbox-attachment-size {
+    color: #999;
+    font-size: 12px;
+}
+
+.btn-default {
+    color: #444;
+}
+
+.mailbox-attachment-icon,
+.mailbox-attachment-info,
+.mailbox-attachment-size {
+    display: block;
+}

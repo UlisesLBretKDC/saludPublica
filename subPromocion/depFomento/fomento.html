@@ -54,6 +54,18 @@
         -webkit-box-shadow: -6px 10px 7px 4px #E8A731;
         box-shadow: -6px 10px 7px 4px #E8A731;
     }
+    
+    .archivos {
+        background-color: #e9ecef;
+        color: #000;
+        margin-left: 25%;
+        margin-right: 1%;
+    }
+    
+    .sombra:hover {
+        -webkit-box-shadow: -6px 10px 7px 4px #9E260D;
+        box-shadow: -6px 10px 7px 4px #9E260D;
+    }
 </style>
 
 <body>
@@ -176,6 +188,61 @@
                 </div>
             </div>
         </div>
+        <br><br><br>
+        <div id="about" class="about-us section" style="padding-top: 0px !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center wow fadeIn align-self-center" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <div class="section-heading ">
+                                <h2 style="font-size: xxx-large; text-align: center; "><em>Programas del Departamento</em></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="subdirecciones" class="our-services section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="service-item wow bounceInUp sombra" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="right-content">
+                                        <h2><a href="atencion-integral.html">Atenciones Integrales</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-item wow bounceInUp sombra" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="right-content">
+                                        <h2><a href="mercadotecnia-social.html">Mercadotécnia Social en Salud</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-item wow bounceInUp sombra" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="right-content">
+                                        <h2><a href="salud-escolar.html">Salud Escolar</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="dialog" style="background-color: #F9CF58 !important ; color: #5F5E5F !important; border-end-end-radius: 25px; border-top-left-radius: 25px; transition: all .3s; ">
             <div id="aboutZ" class="section">
                 <div class="container">
@@ -184,37 +251,156 @@
                             <img src="../../assets/images/FMaterial.png" style="width: 60% !important;">
                         </div>
                         <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <a href="#">
+                            <a href="javascript:mostrar('divLecturas')">
                                 <p style=" margin: 40px 25px;"><b> <i class="fa fa-book fa-3x"></i> Lecturas Básicas</b>
                                 </p>
                             </a>
                         </div>
                         <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-file-powerpoint-o fa-3x"></i> Presentaciones PPT.</b>
-                            </p>
+                            <a href="javascript:mostrar('divComplementarias')">
+                                <p style=" margin: 40px 25px;"><b> <i class="fa fa-file-powerpoint-o fa-3x"></i> Lecturas Complementarias</b>
+                                </p>
+                            </a>
                         </div>
                         <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-gavel fa-3x"></i> Normas.</b>
-                            </p>
+                            <a href="javascript:mostrar('divManuales')">
+                                <p style=" margin: 40px 25px;"><b> <i class="fa fa-gavel fa-3x"></i> Manuales</b>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="aboutZ" class="about-us section" style="background-color: rgb(184, 180, 180); color: #fff;  display: none; ">
+
+        <div id="divLecturas" class="about-us section archivos" style="display: none;">
             <div class="container">
                 <div class="jumbotron">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <h1 class="display-4">Lecturas Básicas</h1>
+                    <p class="lead">Dentro de este apartado podrás encontrar Lecturas Básicas</p>
                     <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <ul class="mailbox-attachments clearfix">
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/01.pdf" target="_blank" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>1. Elementos para una "topografía" del concepto de Salud.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/01.pdf" target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/02.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>2. Equidad en salud a través de la acción intersectorial.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/02.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/03.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>3. Declaracion Adelaida salud en politicas.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/03.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/04.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>4. Los procesos de reforma y la participación social en Am Latina.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/04.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/05.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>5. Chile Doc Tec 1.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/05.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/06.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>6. Chile Doc Tec II.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/06.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/07.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>7. Descentralização e intersetorialidade - Junqueira.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/07.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/07.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>7. Descentralização e intersetorialidade - Junqueira.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/07.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                            <div class="mailbox-attachment-info">
+                                <a href="materiales/LecturasBasicas/08.pdf" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>8. Equidad de acceso.pdf</a>
+                                <span class="mailbox-attachment-size">
+                                  <a href="materiales/LecturasBasicas/08.pdf" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                                </span>
+                            </div>
+                        </li>
+
+
+                    </ul>
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        <a class="btn btn-secondary btn-lg" href="#" role="button">(+) Materiales</a>
                     </p>
                 </div>
             </div>
         </div>
+
+        <div id="divComplementarias" class="about-us section archivos" style="display: none;">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="display-4">Lecturas Complementarias</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p class="lead">
+                        <a class="btn btn-secondary btn-lg" href="#" role="button">(+) Materiales</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="divManuales" class="about-us section archivos" style="display: none;">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="display-4">Manuales</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p class="lead">
+                        <a class="btn btn-secondary btn-lg" href="#" role="button">(+) Materiales</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
 
         <div id="about" class="about-us section">
             <div class="container">
@@ -350,6 +536,18 @@
 <script src="../../assets/js/animation.js"></script>
 <script src="../../assets/js/imagesloaded.js"></script>
 <script src="../../assets/js/custom.js"></script>
+<script>
+    function mostrar(id) {
+        ocultar();
+        document.getElementById(id).style.display = '';
+    }
+
+    function ocultar() {
+        document.getElementById('divLecturas').style.display = 'none';
+        document.getElementById('divComplementarias').style.display = 'none';
+        document.getElementById('divManuales').style.display = 'none';
+    }
+</script>
 
 
 </html>
