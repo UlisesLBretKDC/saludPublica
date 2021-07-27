@@ -331,7 +331,7 @@ header
 */
 
 .background-header {
-    background-color: #e6e6e6!important;
+    background-color: #fff !important;
     height: 80px!important;
     position: fixed!important;
     top: 0px;
@@ -366,7 +366,7 @@ header
 }
 
 .header-area {
-    background-color: #e6e6e6;
+    background-color: #fff;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -381,7 +381,7 @@ header
 
 .header-area .main-nav {
     min-height: 80px;
-    background: transparent;
+    background: #fff;
 }
 
 .header-area .main-nav .logo {
@@ -406,7 +406,7 @@ header
 }
 
 .header-area .main-nav .logo h4 img {
-    max-width: 270px;
+    max-width: 560px;
     margin-top: -5px;
     margin-left: 5px;
     image-rendering: -moz-crisp-edges;
@@ -433,7 +433,7 @@ header
     float: right;
     margin-top: 180px;
     margin-right: 0px;
-    background-color: transparent;
+    background-color: #fff;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -727,14 +727,14 @@ header
     }
     .header-area.header-sticky .nav li a:hover,
     .header-area.header-sticky .nav li a.active {
-        color: #33ccc5!important;
+        color: #eede05!important;
         opacity: 1;
     }
     .header-area.header-sticky .nav li.search-icon a {
         width: 100%;
     }
     .header-area {
-        background-color: #e6e6e6;
+        background-color: #fff;
         padding: 0px 15px;
         height: 100px;
         box-shadow: none;
@@ -777,13 +777,13 @@ header
         border-bottom: 1px solid #e7e7e7;
         padding-left: 0px !important;
         padding-right: 0px !important;
+        margin-top: 140px;
     }
     .header-area .main-nav .nav li a {
         height: 50px !important;
         line-height: 50px !important;
         padding: 0px !important;
         border: none !important;
-        background: #f7f7f7 !important;
         color: #191a20 !important;
     }
     .header-area .main-nav .nav li a:hover {
@@ -1832,7 +1832,7 @@ responsive
         font-size: 30px;
     }
     .header-area .main-nav .logo h4 img {
-        max-width: 200px;
+        max-width: 480px;
         margin-left: 5px;
         image-rendering: -moz-crisp-edges;
         /* Firefox        */
