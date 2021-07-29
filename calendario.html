@@ -121,50 +121,6 @@
         </div>
     </div>
     <br><br><br>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Día Internacional del Cáncer Infantil</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/calendario/CancerInfantil-01.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Día Internacional del Cáncer Infantil</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/calendario/CancerInfantil-02.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Día Internacional del Cáncer Infantil</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/calendario/CancerInfantil-03.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="container">
@@ -202,59 +158,8 @@
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="vendor/evo-calendar/js/evo-calendar.js"></script>
-    <script type="text/javascript">
-        var defaultTheme = getRandom(4);
+    <script src="assets/js/custom_calendar.js"></script>
 
-        var today = new Date();
-
-        var active_events = [];
-
-        var week_date = [];
-
-        var curAdd, curRmv;
-
-        function getRandom(a) {
-            return Math.floor(Math.random() * a);
-        }
-
-        $(document).ready(function() {
-            $('#calendar').evoCalendar({
-                theme: 'Royal Navy',
-                language: 'es',
-                format: "MM dd, yyyy",
-                titleFormat: "MM",
-                calendarEvents: [{
-                    id: "d8jai7s",
-                    name: "Mi cumple",
-                    description: "Lorem ipsum dolor sit amet.",
-                    date: "February/19/2021",
-                    type: "birthday",
-                    everyYear: !0
-                }, {
-                    id: "sKn89hi",
-                    name: "1-Week Coding Bootcamp",
-                    description: "Lorem ipsum dolor sit amet.",
-                    badge: "5-day event",
-                    date: [today.getMonth() + 1 + "/" + week_date.start + "/" + today.getFullYear(), today.getMonth() + 1 + "/" + week_date.end + "/" + today.getFullYear()],
-                    type: "event",
-                    everyYear: !0
-                }, {
-                    id: "in8bha4",
-                    name: "Día Internacional del Cáncer Infantil",
-                    description: "<ul><li><button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal'>Cartel 01</button></li><li><button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal2'>Cartel 02</button></li><li><button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal3'>Cartel 03</button></li></ul>",
-                    //badge: "5-day event",
-                    date: today,
-                    type: "holiday"
-
-                }, {
-                    id: "in8bha4",
-                    name: "Event #2",
-                    date: today,
-                    type: "event"
-                }]
-            });
-        })
-    </script>
 </body>
 
 </html>
