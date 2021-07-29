@@ -431,7 +431,7 @@ header
 
 .header-area .main-nav .nav {
     float: right;
-    margin-top: 180px;
+    margin-top: 210px;
     margin-right: 0px;
     background-color: #fff;
     -webkit-transition: all 0.3s ease 0s;
@@ -483,13 +483,11 @@ header
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
     color: #DFA84B !important;
-    font-weight: bold;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
     color: #DFA84B!important;
-    font-weight: bold;
     opacity: 1;
 }
 
