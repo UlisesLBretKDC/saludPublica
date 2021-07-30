@@ -50,6 +50,12 @@
         padding-top: 130px;
     }
     
+    #stitulo {
+        background-color: #6FBEA1;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
     #dialogS {
         background-color: #6FBEA1;
         border-radius: 25px;
@@ -61,7 +67,7 @@
         border-color: #03e729;
     }
     
-    #dialogV {
+    .dialogV {
         background-color: #6FBEA1;
         border-radius: 25px;
         -webkit-box-shadow: -6px 10px 7px 4px #BFD9A9;
@@ -72,7 +78,7 @@
         padding: 10%;
     }
     
-    #dialogA {
+    .dialogA {
         background-color: #F29F29;
         border-radius: 25px;
         -webkit-box-shadow: -6px 10px 7px 4px #EFCB6B;
@@ -104,6 +110,12 @@
     
     .features-item {
         color: #fff;
+    }
+    
+    .subTitulo {
+        color: #fff;
+        vertical-align: middle;
+        text-align: center;
     }
     
     @media (max-width: 992px) {
@@ -207,16 +219,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-xs-12 " data-wow-duration="1s" data-wow-delay="0.5s">
-                    <div id="dialogV" class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h4>¿Qué es?</h4>
+                    <a href="javascript:mostrar('divQuees')">
+                        <div class="dialogV left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h4>¿Qué es?</h4>
+                        </div>
+                    </a>
+                    <div id="divQuees" style="display: none;">
+                        <p>Son las diferentes etapas que recorre un individuo durante su vida, además de ciertos eventos que ocurren a lo largo de ésta, como podrían ser el nacimiento, la infancia, la adolescencia y el embarazo.
+                        </p>
                     </div>
                     <br><br>
-                    <div id="dialogA" class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h4>¿Por qué lo hacemos?</h4>
+                    <a href="javascript:mostrar('divPorque')">
+                        <div class="dialogA left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h4>¿Por qué lo hacemos?</h4>
+                            <p></p>
+                        </div>
+                    </a>
+                    <div id="divPorque" style="display: none;">
+                        <p>Para promover la corresponsabilidad y el autocuidado de la salud entre la población que acude a las unidades de salud.</p>
                     </div>
                     <br><br>
-                    <div id="dialogV" class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h4>¿Para que lo hacemos?</h4>
+                    <a href="javascript:mostrar('divPara')">
+                        <div class="dialogV left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h4>¿Para quien lo hacemos?</h4>
+                        </div>
+                    </a>
+                    <div id="divPara" style="display: none;">
+                        <p>Población en General </p>
                     </div>
                 </div>
 
@@ -225,95 +254,68 @@
                 </div>
 
                 <div class="col-lg-5 col-xs-12" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <div id="dialogA" class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h4>¿Qué es la estrategia de prevención y promoción de la salud durante la línea de vida? </h4>
+                    <a href="javascript:mostrar('divQueest')">
+                        <div class="dialogA left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h4>¿Qué es la estrategia de prevención y promoción de la salud durante la línea de vida? </h4>
+                        </div>
+                    </a>
+                    <div id="divQueest" style="display: none;">
+                        <p>Es un grupo de acciones básicas para evitar enfermedades y propiciar el autocuidado de la salud que se otorga a las personas de acuerdo a su edad y sexo, independientemente de la causa por la que visitan la unidad de salud. </p>
                     </div>
                     <br><br>
-                    <div id="dialogV" class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h4>¿Para qué lo hacemos?</h4>
+                    <a href="javascript:mostrar('divParaQ')">
+                        <div class="dialogV left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h4>¿Para qué lo hacemos?</h4>
+                        </div>
+                    </a>
+                    <div id="divParaQ" style="display: none;">
+                        <p>Para asegurar que en todas las unidades médicas se otorguen servicios integrales para la prevención de enfermedades y promoción de la salud, de acuerdo con la edad y sexo de cada persona o estado de vida en particular.</p>
                     </div>
                     <br><br>
-                    <div id="dialogA" class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h4>¿Para quién lo hacemos?</h4>
+                    <a href="javascript:mostrar('divComo')">
+                        <div class="dialogA left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h4>¿Cómo lo hacemos?</h4>
+                        </div>
+                    </a>
+                    <div id="divComo" style="display: none;">
+                        <p>A través de las Cartillas Nacionales de Salud (CNS), qué forman parte de la estrategia de línea de vida al ser un instrumento que permite recordarle a la población las acciones que debe solicitar cada vez que acuda a las unidades
+                            de salud.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
-    <div id="cns" class="cns section">
+    <br><br>
+    <!-- Banner titulo -->
+    <div id="stitulo" class="about-us section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-
-                    </div>
-                </div>
-                <div class="col-lg-7 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  ¿A quién está dirigida la CNS de niñas y niños?
-                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Esta Cartilla está dirigida a las niñas y niños menores de 0 a 9 años, así como a los padres o cuidadores de los niños menores, con la finalidad de informar los aspectos fundamentales en el cuidado de la salud del niño desde su nacimiento, organizados
-                                    en los siguientes grupos de edad: Recién nacido, Uno a once meses de edad, Uno a cuatro años de edad y Cinco a nueve años de edad.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  ¿Para qué lo hacemos?
-                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  ¿Por qué lo hacemos?
-                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  ¿Para quién lo hacemos?
-                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-12">
+                    <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h1 class="subTitulo">¿Que son las CNS?</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="about" class="about-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <p style="text-align: justify;">Las Cartillas son una herramienta que integran acciones de promoción de la salud, nutrición, detección, prevención y control de enfermedades; esquema de vacunación y un apartado de citas médicas. Estas acciones preventivas de salud
+                        promueven la calidad, equidad de género, corresponsabilidad y el auto cuidado de la salud, así como estrategias de prevención y promoción de la salud que faciliten el seguimiento personalizado y continuo de las acciones de salud
+                        en todas las etapas de la vida.
+                    </p>
+                    <div class="section-heading">
+                        <h2><em>¿Cuantas Cartillas Nacionales de Salud hay?</em></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="features" class="features section">
         <div class="container">
@@ -321,76 +323,43 @@
                 <div class="col-lg-12">
                     <div class="features-content">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-2">
                                 <div class="features-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                                    <img src="../../assets/images/recien-nacidos.png" alt="">
-                                    <h4>Recién Nacidos</h4>
+                                    <img src="../../assets/images/cartilla.png" alt="">
+                                    <h4>Cartilla Nacional de Salud de Niños y Niñas</h4>
                                     <div class="line-dec"></div>
-
-                                    <ul style="text-align: left;">
-                                        <li><a href="">Promoción de la salud</a></li>
-                                        <li>Nutrición</li>
-                                        <li>Prevención y Control de enfermedades</li>
-                                        <li>Detección de enfermedades</li>
-                                    </ul>
-
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-2">
                                 <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                                    <img src="../../assets/images/1_a_11.png" alt="">
-                                    <h4>1 a 11 meses</h4>
+                                    <img src="../../assets/images/cartilla.png" alt="">
+                                    <h4>Cartilla Nacional de Salud del Adolecente</h4>
                                     <div class="line-dec"></div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-3">
+                            <div class="col-lg-2">
                                 <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-                                    <img src="../../assets/images/1_a_4.png" alt="">
-                                    <h4>1 a 4 años</h4>
+                                    <img src="../../assets/images/cartilla.png" alt="">
+                                    <h4>Cartilla Nacional de Salud de la Mujer</h4>
                                     <div class="line-dec"></div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-3">
+                            <div class="col-lg-2">
                                 <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
-                                    <img src="../../assets/images/5_a_9.png" alt="">
-                                    <h4>5 a 9 años</h4>
+                                    <img src="../../assets/images/cartilla.png" alt="">
+                                    <h4>Cartilla Nacional de Salud del Hombre</h4>
                                     <div class="line-dec"></div>
                                 </div>
                             </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="skills-content">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="skill-item first-skill wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                    <div class="icon"></div>
-                                    <h4>Materiales</h4>
+                            <div class="col-lg-2">
+                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
+                                    <img src="../../assets/images/cartilla.png" alt="">
+                                    <h4>Cartilla Nacional de Salud del Adulto Mayor</h4>
+                                    <div class="line-dec"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="skill-item second-skill wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                    <div class="icon"></div>
-                                    <h4>Manuales</h4>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="skill-item third-skill wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                    <div class="icon"></div>
-                                    <h4>Presentaciones</h4>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="skill-item last-skill-item fourth-skill wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                    <div class="icon"></div>
-                                    <h4>Normas</h4>
-                                </div>
-                            </div>
+                            <div class="col-lg-1"></div>
                         </div>
                     </div>
                 </div>
@@ -399,6 +368,129 @@
     </div>
 
 
+    <div id="dialog" style="background-color: #34A47B !important ; color: #fff !important; border-end-end-radius: 25px; border-top-left-radius: 25px; transition: all .3s; ">
+        <div id="aboutZ" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="../../assets/images/FMaterial.png" style="width: 60% !important;">
+                    </div>
+                    <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href="javascript:mostrarM('divLecturas')">
+                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-book fa-3x"></i>Lecturas Básicas</b>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href="javascript:mostrarM('divComplementarias')">
+                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-file-powerpoint-o fa-3x"></i> Lecturas Complementarias</b>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href="javascript:mostrarM('divManuales')">
+                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-gavel fa-3x"></i> Manuales</b>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="divLecturas" class="about-us section archivos" style="display: none;">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Lecturas Básicas</h1>
+                <p class="lead">Dentro de este apartado podrás encontrar Lecturas Básicas</p>
+                <hr class="my-4">
+                <ul class="mailbox-attachments clearfix">
+                    <li>
+                        <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                        <div class="mailbox-attachment-info">
+                            <a href="materiales/LecturasBasicas/01.pdf" target="_blank" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>1. Elementos para una "topografía" del concepto de Salud.pdf</a>
+                            <span class="mailbox-attachment-size">
+                              <a href="materiales/LecturasBasicas/01.pdf" target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                            </span>
+                        </div>
+                    </li>
+
+                </ul>
+                <p class="lead">
+                    <a class="btn btn-secondary btn-lg" href="#" role="button">(+) Materiales</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="divComplementarias" class="about-us section archivos" style="display: none;">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Lecturas Complementarias</h1>
+                <p class="lead">Dentro de este apartado podrás encontrar Lecturas Complementarias</p>
+                <hr class="my-4">
+                <ul class="mailbox-attachments clearfix">
+                    <li>
+                        <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                        <div class="mailbox-attachment-info">
+                            <a href="materiales/LecturasComplementarias/01.pdf" target="_blank" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>1. Promoción de la salud.pdf</a>
+                            <span class="mailbox-attachment-size">
+                              <a href="materiales/LecturasComplementarias/01.pdf" target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                        <div class="mailbox-attachment-info">
+                            <a href="materiales/LecturasComplementarias/02.pdf" target="_blank" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>2. Sen, Amartya. Por qué la equidad en salud.pdf</a>
+                            <span class="mailbox-attachment-size">
+                              <a href="materiales/LecturasComplementarias/02.pdf" target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="lead">
+                    <a class="btn btn-secondary btn-lg" href="#" role="button">(+) Materiales</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="divManuales" class="about-us section archivos" style="display: none;">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Manuales</h1>
+                <p class="lead">Dentro de este apartado podrás encontrar Manuales</p>
+                <hr class="my-4">
+                <ul class="mailbox-attachments clearfix">
+                    <li>
+                        <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                        <div class="mailbox-attachment-info">
+                            <a href="materiales/Manuales/01.pdf" trget="_blank" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>Manual operativo DSyPS.pdf</a>
+                            <span class="mailbox-attachment-size">
+                              <a href="materiales/Manuales/01.pdf" target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+                        <div class="mailbox-attachment-info">
+                            <a href="materiales/Manuales/02.pdf" trget="_blank" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>Modelo Operativo de PS.pdf</a>
+                            <span class="mailbox-attachment-size">
+                              <a href="materiales/Manuales/02.pdf" target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a>
+                            </span>
+                        </div>
+                    </li>
+                    <p class="lead">
+                        <a class="btn btn-secondary btn-lg" href="#" role="button">(+) Materiales</a>
+                    </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
     <footer>
         <div class="container">
             <div class="row">
@@ -437,5 +529,34 @@
 <script src="../../assets/js/animation.js"></script>
 <script src="../../assets/js/imagesloaded.js"></script>
 <script src="../../assets/js/custom.js"></script>
+<script>
+    function mostrar(id) {
+        ocultar();
+        document.getElementById(id).style.display = '';
+    }
+
+    function ocultar() {
+        document.getElementById('divQuees').style.display = 'none';
+        document.getElementById('divQuees').style.display = 'none';
+        document.getElementById('divPorque').style.display = 'none';
+        document.getElementById('divPara').style.display = 'none';
+        document.getElementById('divQueest').style.display = 'none';
+        document.getElementById('divParaQ').style.display = 'none';
+        document.getElementById('divComo').style.display = 'none';
+
+    }
+
+    function mostrarM(id) {
+        ocultarM();
+        document.getElementById(id).style.display = '';
+    }
+
+    function ocultarM() {
+        document.getElementById('divLecturas').style.display = 'none';
+        document.getElementById('divComplementarias').style.display = 'none';
+        document.getElementById('divManuales').style.display = 'none';
+    }
+</script>
+
 
 </html>
