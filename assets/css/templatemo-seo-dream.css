@@ -406,7 +406,7 @@ header
 }
 
 .header-area .main-nav .logo h4 img {
-    max-width: 560px;
+    max-width: 378px;
     margin-top: -5px;
     margin-left: 5px;
     image-rendering: -moz-crisp-edges;
@@ -712,7 +712,7 @@ header
         padding-right: 0px;
     }
     .header-area .main-nav .nav {
-        margin-top: 325px;
+        margin-top: 107px;
     }
 }
 
@@ -1757,7 +1757,7 @@ responsive
         font-size: 24px;
     }
     .header-area .main-nav .logo h4 img {
-        max-width: 250px;
+        max-width: 305px;
         margin-left: 0px;
         image-rendering: -moz-crisp-edges;
         /* Firefox        */
@@ -1830,7 +1830,7 @@ responsive
         font-size: 30px;
     }
     .header-area .main-nav .logo h4 img {
-        max-width: 480px;
+        max-width: 305px;
         margin-left: 5px;
         image-rendering: -moz-crisp-edges;
         /* Firefox        */
@@ -2171,4 +2171,9 @@ a:hover {
 .mailbox-attachment-info,
 .mailbox-attachment-size {
     display: block;
+}
+
+.icono {
+    width: 63px;
+    height: 63px;
 }
