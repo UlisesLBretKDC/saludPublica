@@ -52,8 +52,8 @@
     
     #stitulo {
         background-color: #6FBEA1;
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     
     .dialogS {
@@ -117,7 +117,11 @@
         vertical-align: middle;
         text-align: center;
     }
-    
+    .centrarElemento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     @media (max-width: 992px) {
         .reducirAbu {
             width: 40%;
@@ -195,20 +199,14 @@
     <div id="about" class="about-us section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-1 align-self-center wow fadeInRight reducirNi" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../assets/images/ninia.png" alt="">
-                </div>
-
-                <div class="col-lg-9">
-
+                <div class="col-lg-10 align-self-center wow fadeInRight">
                     <div class="dialogS left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                         <p> Para facilitar el quehacer del personal de salud y, al mismo tiempo, mejorar la calidad de la atención, se diseñó la estrategia denominada “La Prevención y Promoción de la Salud durante la Línea de Vida”, cuyo objetivo esencial
                             es asegurar que en todas las unidades médicas otorguen servicios integrales para la prevención de enfermedades y la promoción de la salud, de acuerdo con la edad y el sexo de cada persona o estad de vida en particular.</p>
                     </div>
-
                 </div>
-                <div class="col-lg-2 align-self-center wow fadeInRight reducirAbu" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../../assets/images/abuela.png">
+                <div class="align-self-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <img src="../../assets/images/abuela.png" class="fadeInRight" style="float:right; clear:right; margin-top: -20%; margin-left: -170%; width: 20%; ">
                 </div>
             </div>
         </div>
@@ -219,8 +217,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-xs-12 " data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="javascript:mostrar('divQuees')">
-                        <div class="dialogV left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a href="javascript:mostrarOcultarDiv('divQuees')">
+                        <div class="dialogV left-image wow fadeInLeft centrarElemento" data-wow-duration="1s" data-wow-delay="0.5s">
                             <h4>¿Qué es?</h4>
                         </div>
                     </a>
@@ -229,18 +227,17 @@
                         </p>
                     </div>
                     <br><br>
-                    <a href="javascript:mostrar('divPorque')">
-                        <div class="dialogA left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a href="javascript:mostrarOcultarDiv('divPorque')">
+                        <div class="dialogA left-image wow fadeInLeft centrarElemento" data-wow-duration="1s" data-wow-delay="0.5s" >
                             <h4>¿Por qué lo hacemos?</h4>
-                            <p></p>
                         </div>
                     </a>
                     <div id="divPorque" style="display: none;">
                         <p>Para promover la corresponsabilidad y el autocuidado de la salud entre la población que acude a las unidades de salud.</p>
                     </div>
                     <br><br>
-                    <a href="javascript:mostrar('divPara')">
-                        <div class="dialogV left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a href="javascript:mostrarOcultarDiv('divPara')">
+                        <div class="dialogV left-image wow fadeInLeft centrarElemento" data-wow-duration="1s" data-wow-delay="0.5s">
                             <h4>¿Para quien lo hacemos?</h4>
                         </div>
                     </a>
@@ -254,8 +251,8 @@
                 </div>
 
                 <div class="col-lg-5 col-xs-12" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="javascript:mostrar('divQueest')">
-                        <div class="dialogA left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a href="javascript:mostrarOcultarDiv('divQueest')">
+                        <div class="dialogA left-image wow fadeInLeft centrarElemento" data-wow-duration="1s" data-wow-delay="0.5s">
                             <h4>¿Qué es la estrategia de prevención y promoción de la salud durante la línea de vida? </h4>
                         </div>
                     </a>
@@ -263,8 +260,8 @@
                         <p>Es un grupo de acciones básicas para evitar enfermedades y propiciar el autocuidado de la salud que se otorga a las personas de acuerdo a su edad y sexo, independientemente de la causa por la que visitan la unidad de salud. </p>
                     </div>
                     <br><br>
-                    <a href="javascript:mostrar('divParaQ')">
-                        <div class="dialogV left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a href="javascript:mostrarOcultarDiv('divParaQ')">
+                        <div class="dialogV left-image wow fadeInLeft centrarElemento" data-wow-duration="1s" data-wow-delay="0.5s">
                             <h4>¿Para qué lo hacemos?</h4>
                         </div>
                     </a>
@@ -272,8 +269,8 @@
                         <p>Para asegurar que en todas las unidades médicas se otorguen servicios integrales para la prevención de enfermedades y promoción de la salud, de acuerdo con la edad y sexo de cada persona o estado de vida en particular.</p>
                     </div>
                     <br><br>
-                    <a href="javascript:mostrar('divComo')">
-                        <div class="dialogA left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a href="javascript:mostrarOcultarDiv('divComo')">
+                        <div class="dialogA left-image wow fadeInLeft " data-wow-duration="1s" data-wow-delay="0.5s">
                             <h4>¿Cómo lo hacemos?</h4>
                         </div>
                     </a>
@@ -300,15 +297,17 @@
         </div>
     </div>
 
-    <div id="about" class="about-us section">
+    <div><br>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <p style="text-align: justify;">Las Cartillas son una herramienta que integran acciones de promoción de la salud, nutrición, detección, prevención y control de enfermedades; esquema de vacunación y un apartado de citas médicas. Estas acciones preventivas de salud
+                <div class="col-lg-12 align-self-center fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <p style="text-align: justify;">
+                        Las Cartillas son una herramienta que integran acciones de promoción de la salud, nutrición, detección, prevención y control de enfermedades; esquema de vacunación y un apartado de citas médicas. Estas acciones preventivas de salud
                         promueven la calidad, equidad de género, corresponsabilidad y el auto cuidado de la salud, así como estrategias de prevención y promoción de la salud que faciliten el seguimiento personalizado y continuo de las acciones de salud
                         en todas las etapas de la vida.
                     </p>
                     <div class="section-heading">
+                        <br>
                         <h2><em>¿Cuantas Cartillas Nacionales de Salud hay?</em></h2>
                     </div>
                 </div>
@@ -374,22 +373,25 @@
                 <div class="col-lg-6">
                     <div class="center wow fadeIn align-self-center" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-heading ">
-                            <h2 style="font-size: xxx-large;"><em>¿Cómo puedes colaborar?</em></h2>
+                            <h2><em>¿Cómo puedes colaborar?</em></h2>
                         </div>
                     </div>
                 </div>
                 <div style="background-color: #6FBEA1 !important ; color: #4d4444 !important; border-radius: 25px; transition: all .3s; ">
                     <div class="col-lg-8 align-self-center wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
-                        <p style="text-align: justify; font-weight: bold; ">Siempre que asistas a tu unidad médica, presenta tu Cartilla Nacional de Salud y solicítale a tu médico, enfermera, promotor o la trabajadora social, que actualice tu CNS, recuerda que esta se entrega de manera gratuita a la población.
+                        <p style="text-align: justify; font-weight: bold; margin-left: 15%;">
+                            Siempre que asistas a tu unidad médica, presenta tu Cartilla Nacional de Salud y solicítale a tu médico,
+                            enfermera, promotor o la trabajadora social, que actualice tu CNS, recuerda que esta se entrega de manera
+                            gratuita a la población.
                         </p>
-                        <p style="text-align: justify; font-weight: bold; ">Teléfono de Contacto: (228) 8423000 Ext. 2326.</p>
-                        <p style="text-align: justify; font-weight: bold; ">Correo: atencionesintegralesestado@gmail.com</p>
+                        <p style="text-align: justify; font-weight: bold; margin-left: 15%;">Teléfono de Contacto: (228) 8423000 Ext. 2326.</p>
+                        <p style="text-align: justify; font-weight: bold; margin-left: 15%;">Correo: atencionesintegralesestado@gmail.com</p>
                         </p>
                     </div>
-                    <div class="align-self-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="../../assets/images/Ayuda.png" class="fadeInRight" style="float:right;clear:right; margin-top: -30%; width: 20%; ">
+                    <div data-wow-duration="1s" data-wow-delay="0.5s" style="margin-left: -25%;">
+                        <img src="../../assets/images/Ayuda.png" class="fadeInRight" style="float:right; margin-top: -25%; width: 20%;">
                     </div>
-
+                   
                 </div>
             </div>
         </div>
@@ -406,20 +408,19 @@
                     </div>
                     <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                         <a href="javascript:mostrarM('divLecturas')">
-                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-book fa-3x"></i>Lecturas Básicas</b>
+                            <p style=" margin: 40px 25px;"><b style="color: #fff;"> <i class="fa fa-book fa-3x"></i>Lecturas Básicas</b>
                             </p>
                         </a>
                     </div>
                     <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                         <a href="javascript:mostrarM('divComplementarias')">
-                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-file-powerpoint-o fa-3x"></i> Lecturas Complementarias</b>
+                            <p style=" margin: 40px 25px;"><b style="color: #1f2736;"> <i class="fa fa-file-powerpoint-o fa-3x"></i> Lecturas Complementarias</b>
                             </p>
                         </a>
                     </div>
                     <div class="col-md-3 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                         <a href="javascript:mostrarM('divManuales')">
-                            <p style=" margin: 40px 25px;"><b> <i class="fa fa-gavel fa-3x"></i> Manuales</b>
-                            </p>
+                            <p style="margin: 40px 25px;"><b style="color: #fff;"> <i class="fa fa-gavel fa-3x"></i> Manuales</b></p>
                         </a>
                     </div>
                 </div>
@@ -565,6 +566,15 @@
     function mostrar(id) {
         ocultar();
         document.getElementById(id).style.display = '';
+    }
+    
+    function mostrarOcultarDiv(id){
+        var div = document.getElementById(id);
+        if(div.style.display === "none"){
+            div.style.display = "";
+        }else{
+            div.style.display = "none";
+        }
     }
 
     function ocultar() {
